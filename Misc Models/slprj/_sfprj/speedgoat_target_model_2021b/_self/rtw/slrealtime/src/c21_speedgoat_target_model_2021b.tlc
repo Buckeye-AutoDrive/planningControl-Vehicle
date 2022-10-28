@@ -1,0 +1,116 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   13 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c21_speedgoat_target_model_2021b"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c21_speedgoat_target_model_2021b"\
+      Path         "is_active_c21_speedgoat_target_model_2021b"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_c21_speedgoat_target_model_2021b"\
+      Description  "StateActiveChild"\
+      SFName       "is_c21_speedgoat_target_model_2021b"\
+      Path         "is_c21_speedgoat_target_model_2021b"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_Navigation"\
+      Description  "StateActiveChild"\
+      SFName       "is_Navigation"\
+      Path         "Navigation.is_Navigation"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_RailCrossing"\
+      Description  "StateActiveChild"\
+      SFName       "is_RailCrossing"\
+      Path         "Navigation.RailCrossing.is_RailCrossing"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_RoundAbout"\
+      Description  "StateActiveChild"\
+      SFName       "is_RoundAbout"\
+      Path         "Navigation.RoundAbout.is_RoundAbout"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_TrafficLight"\
+      Description  "StateActiveChild"\
+      SFName       "is_TrafficLight"\
+      Path         "Navigation.TrafficLight.is_TrafficLight"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_StopSign"\
+      Description  "StateActiveChild"\
+      SFName       "is_StopSign"\
+      Path         "Navigation.StopSign.is_StopSign"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "DestReached"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "DestReached"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "ExitFlag"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ExitFlag"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "CurrentVelCmd"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "CurrentVelCmd"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Navi"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Navi"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
